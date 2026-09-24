@@ -1,7 +1,8 @@
 import { useEffect, useRef } from 'react'
 
 const BOTTOM = 1042
-const TOTAL_DURATION = 7200
+export const HERO_LOGO_DURATION = 7200
+const TOTAL_DURATION = HERO_LOGO_DURATION
 const SETTLE_AT = 4600
 
 // LED-meter ballistics: bars jump up quickly but fall back slowly.

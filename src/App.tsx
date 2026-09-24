@@ -1,9 +1,12 @@
 import './App.css'
-import HeroLogo from './components/HeroLogo'
+import IntroLogo from './components/IntroLogo'
+import HeroBackgroundVideo from './components/HeroBackgroundVideo'
 
 function App() {
   return (
     <>
+      <IntroLogo />
+
       <header className="navbar">
         <a className="logo" href="#">
           MIRACLE
@@ -19,22 +22,8 @@ function App() {
 
       <main>
         <section className="hero">
+          <HeroBackgroundVideo />
           <div className="hero__overlay" />
-
-          <div className="hero__content">
-            <p className="eyebrow">Recording studio</p>
-
-            <HeroLogo />
-
-            <p className="hero__subtitle">
-              Recording · Mixing · Mastering
-            </p>
-
-            <a className="hero__button" href="#studio">
-              Fedezd fel a stúdiót
-              <span aria-hidden="true">→</span>
-            </a>
-          </div>
 
           <a className="scroll-indicator" href="#studio">
             <span>Scroll</span>
